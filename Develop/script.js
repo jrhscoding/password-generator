@@ -16,6 +16,8 @@ function writePassword() {
 function generatePassword() {
   var password = '';
   var passwordLength = Number(prompt('How many characters would you like your password to be?'));
+  while (passwordLength < 8) passwordLength = Number(prompt('Password must be greater than 8 characters, please select a new length'));
+  while (passwordLength > 128) passwordLength = Number(prompt('Password must be less than 128 characters, please select a new length'));
 
   console.log(passwordLength);
 
