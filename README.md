@@ -19,4 +19,6 @@ THEN my input should be validated and at least one character type should be sele
 WHEN all prompts are answered
 THEN a password is generated that matches the selected criteria
 WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
+THEN the password is either displayed in an alert or written to the page!
+[Screen Shot 2022-09-19 at 11 37 48 AM](https://user-images.githubusercontent.com/108772259/191091047-9bcf69ae-0eea-41f8-90fa-4f8acc38b059.png)
+https://jrhscoding.github.io/password-generator/
