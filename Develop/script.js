@@ -25,6 +25,14 @@ function generatePassword() {
   var lowercase = confirm('Include lowercase letters in your password?');
   var numbers = confirm('Include numbers in your password?');
   var symbols = confirm('Include symbols in your password?');
+
+  var passwordCharacters = '';
+  if (uppercase) passwordCharacters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  if (lowercase) passwordCharacters += 'abcdefghijklmnopqrstuvwxyz';
+  if (numbers) passwordCharacters += '1234567890';
+  if (symbols) passwordCharacters += "#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+
+  console.log(passwordCharacters);
 }
 
 // Add event listener to generate button
