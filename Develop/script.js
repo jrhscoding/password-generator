@@ -33,6 +33,14 @@ function generatePassword() {
   if (symbols) passwordCharacters += "#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 
   console.log(passwordCharacters);
+
+  for (var i = password.length; i < passwordLength; i++ ) {
+    var randomNumber = Math.floor(Math.random() * passwordCharacters.length);
+    password += passwordCharacters.charAt(randomNumber)
+  }
+
+  console.log(password)
+  return password;
 }
 
 // Add event listener to generate button
