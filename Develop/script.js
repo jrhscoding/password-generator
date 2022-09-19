@@ -13,5 +13,10 @@ function writePassword() {
 
 }
 
+function generatePassword() {
+  var password = '';
+  var passwordLength = Number(prompt('How many characters would you like your password to be?'));
+}
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
